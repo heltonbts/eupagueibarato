@@ -34,6 +34,13 @@
       link.href = invitation;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
+      link.addEventListener("click", () => {
+        if (typeof window.fbq === "function") {
+          window.fbq("trackCustom", "WhatsAppClick", {
+            content_name: "Grupo eupagueibarato",
+          });
+        }
+      });
     } else {
       link.addEventListener("click", (event) => {
         event.preventDefault();
@@ -42,7 +49,7 @@
     }
   });
   document.querySelector("[data-privacy]").addEventListener("click", () => {
-    showNotice("Sua privacidade", "Esta página não usa formulários, cookies de rastreamento ou ferramentas de análise. Ao abrir o convite, você acessa o WhatsApp, que possui suas próprias regras de privacidade. Em grupos, seu número e as informações do seu perfil podem ficar visíveis a outros participantes, conforme as configurações do WhatsApp.");
+    showNotice("Sua privacidade", "Esta página utiliza o Pixel da Meta para medir visitas e cliques no convite do grupo e avaliar anúncios. A Meta pode usar cookies e receber informações de navegação, como a página visitada e dados do navegador e dispositivo. Não coletamos dados por formulários. Ao abrir o convite, você acessa o WhatsApp, que possui suas próprias regras de privacidade. Em grupos, seu número e as informações do seu perfil podem ficar visíveis a outros participantes, conforme as configurações do WhatsApp.");
   });
   const mobileJoin = document.querySelector(".mobile-join");
   const heroButton = document.querySelector(".hero [data-join]");
