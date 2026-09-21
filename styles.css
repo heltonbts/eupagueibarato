@@ -25,8 +25,31 @@
   .announcement strong { max-width: 340px; text-wrap: balance; }
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-.hero-join-prompt{display:flex;align-items:center;gap:11px;margin:5px 0 12px;color:var(--forest)}
-.hero-join-prompt::before{content:"";width:9px;height:9px;flex:0 0 auto;border-radius:50%;background:#ef6f98;box-shadow:0 0 0 5px #ef6f9820}
-.hero-join-prompt span{font-size:14px;font-weight:850;letter-spacing:.02em}.hero-join-prompt small{font-size:11px;color:var(--muted)}
-.hero-copy>.button-primary{min-width:285px;font-size:13px;letter-spacing:.01em}
-@media(max-width:760px){.hero-join-prompt{display:block;margin:7px 0 12px 3px}.hero-join-prompt::before{display:inline-block;margin-right:9px;vertical-align:1px}.hero-join-prompt span{font-size:12px}.hero-join-prompt small{display:block;margin:4px 0 0 18px;font-size:10px}.hero-copy>.button-primary{min-width:0;width:100%}}
+.hero-join-prompt {
+  display: grid;
+  gap: 5px;
+  max-width: 350px;
+  margin: 5px 0 18px;
+  color: var(--forest);
+}
+.hero-join-prompt strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.hero-join-prompt p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.hero-copy > .button-primary {
+  min-width: 285px;
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .hero-join-prompt { margin-top: 7px; }
+  .hero-copy > .button-primary { min-width: 0; width: 100%; gap: 9px; padding-inline: 16px; }
+  .hero-copy > .button-primary svg:last-child { margin-left: 0; }
+}
