@@ -34,6 +34,12 @@ Pixel instalado: `1108211248829028`.
 
 O codigo base esta em `index.html` e carrega `https://connect.facebook.net/en_US/fbevents.js` de forma assincrona. Os eventos de clique ficam em `script.js`. O aviso de privacidade informa o rastreamento. Nao ha formulario de coleta de dados.
 
+## TikTok Pixel
+
+Pixel instalado: `DAO8P63C77UF5LAHGPMG`.
+
+O snippet fornecido pelo usuario esta em `index.html`, junto ao Pixel da Meta. Carrega `https://analytics.tiktok.com/i18n/pixel/events.js` de forma assincrona e chama `ttq.page()` uma vez por carregamento. Nao foram adicionados eventos personalizados do TikTok. O aviso de privacidade informa o uso dos dois pixels.
+
 ## Imagens
 
 Logo: fornecida pelo usuario, preservada em `assets/logo.png`.
