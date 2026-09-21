@@ -25,3 +25,8 @@
   .announcement strong { max-width: 340px; text-wrap: balance; }
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+.hero-join-prompt{display:flex;align-items:center;gap:11px;margin:5px 0 12px;color:var(--forest)}
+.hero-join-prompt::before{content:"";width:9px;height:9px;flex:0 0 auto;border-radius:50%;background:#ef6f98;box-shadow:0 0 0 5px #ef6f9820}
+.hero-join-prompt span{font-size:14px;font-weight:850;letter-spacing:.02em}.hero-join-prompt small{font-size:11px;color:var(--muted)}
+.hero-copy>.button-primary{min-width:285px;font-size:13px;letter-spacing:.01em}
+@media(max-width:760px){.hero-join-prompt{display:block;margin:7px 0 12px 3px}.hero-join-prompt::before{display:inline-block;margin-right:9px;vertical-align:1px}.hero-join-prompt span{font-size:12px}.hero-join-prompt small{display:block;margin:4px 0 0 18px;font-size:10px}.hero-copy>.button-primary{min-width:0;width:100%}}
