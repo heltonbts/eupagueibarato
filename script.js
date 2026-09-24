@@ -36,6 +36,9 @@
       link.rel = "noopener noreferrer";
       link.addEventListener("click", () => {
         if (typeof window.fbq === "function") {
+          window.fbq("track", "Lead", {
+            content_name: "Grupo eupagueibarato",
+          });
           window.fbq("trackCustom", "WhatsAppClick", {
             content_name: "Grupo eupagueibarato",
           });

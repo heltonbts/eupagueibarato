@@ -30,7 +30,8 @@ Todos os botoes e categorias passam a abrir esse convite. Sem o link, a pagina e
 Pixel instalado: `1108211248829028`.
 
 - `PageView`: uma visita por carregamento da pagina, com alternativa `noscript`.
-- `WhatsAppClick`: evento personalizado ao clicar em um convite valido do grupo, incluindo botoes e categorias. Mede a abertura do convite, nao a entrada efetiva no grupo.
+- `Lead`: evento padrao disparado a cada clique em um convite valido do grupo, para otimizacao de campanhas.
+- `WhatsAppClick`: evento personalizado ao clicar em um convite valido do grupo, incluindo botoes e categorias. Ambos medem a abertura do convite, nao a entrada efetiva no grupo.
 
 O codigo base esta em `index.html` e carrega `https://connect.facebook.net/en_US/fbevents.js` de forma assincrona. Os eventos de clique ficam em `script.js`. O aviso de privacidade informa o rastreamento. Nao ha formulario de coleta de dados.
 
