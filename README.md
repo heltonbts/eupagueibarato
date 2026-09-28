@@ -39,7 +39,11 @@ O codigo base esta em `index.html` e carrega `https://connect.facebook.net/en_US
 
 Pixel instalado: `DAO8P63C77UF5LAHGPMG`.
 
-O snippet fornecido pelo usuario esta em `index.html`, junto ao Pixel da Meta. Carrega `https://analytics.tiktok.com/i18n/pixel/events.js` de forma assincrona e chama `ttq.page()` uma vez por carregamento. Nao foram adicionados eventos personalizados do TikTok. O aviso de privacidade informa o uso dos dois pixels.
+O snippet fornecido pelo usuario esta em `index.html`, junto ao Pixel da Meta. Carrega `https://analytics.tiktok.com/i18n/pixel/events.js` de forma assincrona e chama `ttq.page()` uma vez por carregamento.
+
+- `Contact`: evento padrao disparado a cada clique em um convite valido do grupo (botoes e categorias), disponivel como evento de otimizacao no TikTok Ads Manager. Mede a abertura do convite, nao a entrada efetiva no grupo.
+
+O evento fica em `script.js`, no mesmo ouvinte de clique do Pixel da Meta. O aviso de privacidade informa o uso dos dois pixels.
 
 ## Imagens
 
